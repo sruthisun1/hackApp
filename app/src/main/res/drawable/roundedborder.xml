@@ -1,0 +1,6 @@
+<!-- res/drawable/roundedborder.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white" /> <!-- White background -->
+    <corners android:radius="16dp" /> <!-- Adjust corner radius as needed -->
+    <stroke android:width="2dp" android:color="#800080" /> <!-- Optional: Purple border -->
+</shape>

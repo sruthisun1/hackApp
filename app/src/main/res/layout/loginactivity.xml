@@ -1,0 +1,105 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textWelcomeTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/hacklogo"
+        app:layout_constraintTop_toBottomOf="@id/textWelcomeTo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp"/>
+
+
+
+    <TextView
+        android:id="@+id/textHack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HACK"
+        android:textSize="32sp"
+        android:textColor="@android:color/white"        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textIllinois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ILLINOIS"
+        android:textSize="32sp"
+        android:textColor="@android:color/white"        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textHack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textIllinois"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextEmail"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/roundedborder"
+        android:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/roundedborder"
+        android:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonSignIn"
+        android:layout_marginTop="8dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
